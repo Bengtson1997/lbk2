@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{%block content %}
+	
+		<h2>projekt detaljer</h2>
+		<p>dato: {{ object_detail.dato }}</p>
+		<p>opgave: {{ object_detail.titel }}</p>
+		<p>timer: {{ object_detail.timer }}</p>
+		<p>ekstra timer: {{ object_detail.ekstra_timer }}</p>
+		<p>ekstra timer beskrivelse: {{ object_detail.ekstra_timer_beskrivelse }}</p>
+		<p>kørsel: {{ object_detail.kørsel }}</p>
+		<p>opgave beskrivelse: {{ object_detail.opgave_beskrivelse }}</p>
+		<p>materialer: {{ object_detail.materialer }}</p>
+
+
+{% endblock content %}
+
+{% block content2 %}
+
+	<a href = "/projekt/profil" >profil</a>
+			
+{% endblock content2 %}
+
+{% block content3 %}
+
+	<a href = "/projekt" >projekter</a>
+
+{% endblock content3 %}
+		
+{% block content4 %}
+
+	<a href = "/projekt/create" >opret projekt</a>
+
+{% endblock content4 %}
+
+{% block content5 %}
+
+	<a href = "/projekt/logout" >logud</a>
+
+{% endblock content5 %}
+
+
+{% block content6 %}
+
+	<a href='update/'> opdater </a>
+
+{% endblock content6 %}
+
+{% block content7 %}
+
+	<a href='delete/' style="padding-left: 20px;"> slet </a>
+
+{% endblock content7 %}
